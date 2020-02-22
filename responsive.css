@@ -1,0 +1,79 @@
+/* タブレット向けレイアウト */
+
+/* ブレイクポイントが1000px以下のときのメディアクエリを設定 */
+@media (max-width: 1000px) {
+    .top-wrapper {
+        /* 女性の画像をセンターに寄せる */
+        background-position: center;
+    }
+
+    .top-wrapper h1 {
+        font-size: 32px;
+      }
+
+    .heading h2 {
+        font-size: 20px;
+      }
+  }
+
+  /* スマホ向けレイアウト */
+
+/* ブレイクポイントが670px以下の時のメディアクエリを設定 */
+@media (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sign {
+    text-align: center;
+  }
+
+  .sign span {
+      display: none;
+  }
+
+  .facebook {
+    margin-bottom: 10px;
+  }
+
+  .top-wrapper {
+    text-align: left;
+    padding-top: 80px;
+
+    /* 女性の画像をセンターに寄せる */
+    background-position: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
+
+
+  .header-right {
+    display: none;
+  }
+
+  .lesson-wrapper {
+    background-image: none;
+    /* background-position: right; */
+  }
+
+  .lesson-wrapper h2 {
+      color: black;
+    text-shadow: none;
+  }
+  
+  input, textarea {
+    width: 300px;
+  }
+
+  }
