@@ -1,0 +1,294 @@
+/* すべての要素に対してbox-sizingをborder-boxとしてください */
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .clear {
+    clear: left;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  /* スマホを触っている女性の画像 */
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+
+    /* 背景画像の設定 */
+    background-image: url(https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+
+    /* 背景画像のサイズが合わず、繰り返し表示されるのを整えるためのもの */
+    background-size: cover;
+    
+    color: white;
+
+    /* containerクラスのように、広い範囲を囲うようなブロック要素の場合はmarginを使う。テキストやボタンのようなインライン要素・インラインブロック要素の場合はtext-alignを使う。 */
+    text-align: center;
+  }
+  /* /スマホを触っている女性の画像 */
+
+  .top-wrapper h1 {
+    /* 要素を透過させるためのプロパティ0.0~1.0 */
+    opacity: 0.7;
+
+    /* テキストに影をつけるためのプロパティ */
+    text-shadow:2px 2px 3px black;
+
+    font-size: 45px;
+
+    /* 文字の間隔を指定するためのプロパティ */
+    letter-spacing: 5px;
+  }
+
+  .top-wrapper p {
+    opacity: 0.7;
+    text-shadow:2px 2px 3px black;
+  }
+
+  /* ボタンを作成 */
+  .btn {
+    padding: 8px 24px;
+    color: white;
+
+    /* インライン要素である<a>タグをインラインブロック要素に変更するためのプロパティ。インラインブロック要素に変更することでwidthやheightの変更が可能になる。 */
+    display: inline-block;
+
+    opacity: 0.8;
+    border-radius: 8px;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .signup {
+    background-color: #239b76;
+  }
+
+  .facebook {
+    background-color: #3b5998;
+  margin-right: 10px;
+  }
+
+  .twitter {
+    background-color: #55acee;
+  }
+
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+  /* ボタンを作成 */
+
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+
+  /* ヘッダー左側 */
+  .logo {
+    float: left;
+    width: 50px;
+    margin: 0 auto;
+  }
+
+  .header-left p {
+    float: left;
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  /* ヘッダー右側 */
+  .header-right {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s;
+  }
+
+  .header-right:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+  }
+
+  /* ハンバーガーメニュー */
+  
+  /* /ハンバーガーメニュー */
+
+  /* lesson-wrapper */
+  .lesson-wrapper {
+    /* height: 600px; */
+    width: 100%;
+  
+    background-color: #f7f7f7;
+    background-image: url(https://cdn.pixabay.com/photo/2015/05/31/13/45/young-791849_960_720.jpg);
+    background-size: cover;
+
+    padding-bottom: 80px;
+  }
+
+  .heading {
+    padding: 60px 0 30px 0;
+    color: white;
+  }
+
+  .heading h2 {
+    text-shadow:2px 2px 3px black;
+  }
+
+  .lesson {
+    float: left;
+    width: 25%;
+  }
+
+  .lesson-wrapper {
+    text-align: center;
+  }
+
+  .lesson-icon {
+    position: relative;
+  }
+
+  .lesson-icon p {
+    color: white;
+    position: absolute;
+    /* top: 90px; */
+    top: 75px;
+    width: 100%;
+  }
+
+  .txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  /* message-wrapper */
+.message-wrapper {
+  border-bottom: 1px solid black;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+  .message-wrapper h2 {
+    color: #5f5d60;
+    text-shadow: none;
+  }
+
+
+  .message-wrapper h3 {
+    font-weight: normal;
+    color: #5f5d60;
+  }
+
+  .progate {
+    background-color: #5dca88;
+    padding: 15px 40px;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+  }
+
+  /* .message {
+    background-color: #5dca88;
+    padding: 15px 40px;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+  } */
+
+  /* .message:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+  } */
+
+  /* 問い合わせフォーム */
+  .contact-form {
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/19/17/53/writing-1149962_960_720.jpg);
+  }
+
+  .contact-form h3 {
+    font-size: 30px;
+  }
+
+  .contact-form p {
+    font-size: 20px;
+  }
+
+  input, textarea {
+    width: 400px;
+    margin: 10px 0 30px 0;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+
+  .contact-submit {
+    background-color: #dee7ec;
+    color: #889eab;
+    border-radius: 8px;
+  }
+
+  .under {
+    border-bottom: 1px solid red;
+  }
+
+
+  /* フッター */
+  footer {
+    padding-top: 30px;
+  }
+
+  footer img {
+    width: 125px;
+    margin: ;
+  }
+
+  footer p {
+    color: #5f5d60;
+    font-size: 15px;
+  }
+
+  .footer-left {
+    float: left;
+  }
+
+  .footer-right {
+    float: left;
+    margin: 0 0 30px 10px;
+  }
